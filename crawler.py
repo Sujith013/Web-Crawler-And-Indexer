@@ -207,5 +207,6 @@ if __name__ == '__main__':
             idx.docs[doc_id] = meta
     
     idx.save()
+    
 
     print(f"Saved index to ./index.json with {len(idx.postings)} tokens and {len(idx.docs)} docs")

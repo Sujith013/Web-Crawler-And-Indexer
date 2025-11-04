@@ -5,6 +5,7 @@ class InvertedIndex:
     def __init__(self):
         self.postings = defaultdict(dict)
         self.docs = {}
+        self.my_collection = []
 
     def add_document(self, doc_id, tokens, metadata=None):
         freq = Counter(tokens)
